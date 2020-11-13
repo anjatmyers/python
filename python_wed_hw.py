@@ -23,6 +23,8 @@
 
 
 # Coin counter 
+
+
 # counter = 0 
 # answer = input("Do you want a coin?").strip().lower()
 # while answer == "yes":
@@ -38,6 +40,7 @@
 
 
 # # Lets build a box 
+
 # print("Let's build a box!")
 # height = int(input("How many spaces tall should it be?"))
 # width = int(input("How many spaces wide should it be?"))
@@ -51,6 +54,18 @@
 # box_top = ("*" * width)
 # print(box_top)
 ##try joe's suggestion of using range for row and height (for row = 0 and height -1)
+
+##### Joe's box to compare
+# width = int(input("Width? "))
+# height = int(input("Height? "))
+# for row in range(height):
+#     if row == 0 or row == height - 1:
+#         print("*" * width)
+#     else:
+#         print("*", end="")
+#         print(" " * (width - 2), end="")
+#         print("*")
+
 
 
 # print a triangle
@@ -66,6 +81,17 @@
 #     print(" " * spaces + "*" * stars)
 
 
+### CLAUDE'S EXAMPLE IN CLASS TO COMPARE
+# width = int(input("Please enter an odd number: "))
+# spaces = " "
+# numstars = "*"
+# i = 1
+# while i <= width:
+#     sp = int((width - i) / 2)
+#     print(f"{spaces * sp}{numstars * i}{spaces * sp}")
+#     i += 2
+#####
+
 #multiplication table 
 
 # first_int = 1
@@ -77,6 +103,18 @@
 #         second_int += 1
 #     second_int = second_int - 10 
 #     first_int += 1
+
+#### Layne's example to compare
+# Multi-table
+# num = 1
+# while num <= 10:
+#     i = 1
+#     while i <= 10:
+#         product = num*i
+#         print(f"{num} * {i}  =  {product} \n")
+#         i += 1
+#     num += 1
+#     print("\n")
 
 
 
